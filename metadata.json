@@ -1,0 +1,6 @@
+{
+  "name": "Tesla Vehicle Manager",
+  "description": "A vehicle fleet management app using React and Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
