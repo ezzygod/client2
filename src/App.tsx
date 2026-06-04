@@ -396,7 +396,6 @@ export default function App() {
             <table className="w-full text-sm text-left">
               <thead className="text-xs text-slate-400 uppercase bg-slate-900 border-b border-slate-800 sticky top-0">
                 <tr>
-                  <th className="px-4 py-3">ID</th>
                   <th className="px-4 py-3">Model</th>
                   <th className="px-4 py-3">An</th>
                   <th className="px-4 py-3">Km</th>
@@ -412,7 +411,6 @@ export default function App() {
                     onClick={() => handleSelect(v)}
                     className={`border-b border-slate-800 cursor-pointer transition-colors ${selectedId === v.id ? 'bg-blue-900/30' : 'hover:bg-slate-800/60'}`}
                   >
-                    <td className="px-4 py-3 text-slate-400">#{v.id}</td>
                     <td className="px-4 py-3 font-medium text-slate-200">{v.model_masina}</td>
                     <td className="px-4 py-3">{v.an_fabricatie}</td>
                     <td className="px-4 py-3">{v.kilometraj} km</td>
@@ -432,7 +430,7 @@ export default function App() {
                 ))}
                 {vehicles.length === 0 && (
                   <tr>
-                    <td colSpan={7} className="text-center py-8 text-slate-500">Niciun vehicul în bază. Adugă unul nou.</td>
+                    <td colSpan={6} className="text-center py-8 text-slate-500">Niciun vehicul în bază. Adugă unul nou.</td>
                   </tr>
                 )}
               </tbody>
