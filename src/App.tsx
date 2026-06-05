@@ -416,7 +416,7 @@ export default function App() {
                     <td className="px-4 py-3">{v.kilometraj} km</td>
                     <td className="px-4 py-3">{v.cicluri_incarcare}</td>
                     <td className="px-4 py-3 flex items-center gap-1">
-                      <Battery className={`w-4 h-4 ${Number(v.sanatate_baterie) < 70 ? 'text-red-500' : 'text-green-500'}`} />
+                      <Battery className={`w-4 h-4 ${Number(v.sanatate_baterie) < 70 ? 'text-yellow-500' : 'text-green-500'}`} />
                       {v.sanatate_baterie}%
                     </td>
                     <td className="px-4 py-3">
@@ -525,7 +525,7 @@ export default function App() {
                 </div>
                 <div className="col-span-2">
                   <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Sănătate Baterie</p>
-                  <p className={`font-medium ${Number(selectedVehicle.sanatate_baterie) < 70 ? 'text-red-400' : 'text-green-400'}`}>
+                  <p className={`font-medium ${Number(selectedVehicle.sanatate_baterie) < 70 ? 'text-yellow-400' : 'text-green-400'}`}>
                     {selectedVehicle.sanatate_baterie}%
                   </p>
                 </div>
