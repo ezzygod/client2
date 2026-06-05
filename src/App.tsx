@@ -421,7 +421,7 @@ export default function App() {
                     </td>
                     <td className="px-4 py-3">
                       {v.schimbare_baterie === 'Da' ? (
-                        <span className="px-2 py-1 bg-red-900/50 text-red-400 text-xs rounded border border-red-800/50">Urgent</span>
+                        <span className="px-2 py-1 bg-yellow-900/50 text-yellow-400 text-xs rounded border border-red-800/50">Urgent</span>
                       ) : (
                         <span className="px-2 py-1 bg-green-900/30 text-green-400 text-xs rounded border border-green-800/30">Nu</span>
                       )}
